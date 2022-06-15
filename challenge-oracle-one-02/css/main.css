@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Inter&display=swap");
+*{
+    padding:0;
+    margin:0;
+    font-family:"Indie flower", sans-serif;
+    font-weight: bold;
+}
+body{
+    background-color: darkgreen;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding:1.5em 0em;
+}
+
+span, p{
+    color: white;
+}
+span{
+    font-size: 12px;
+    
+}
+p{
+    font-size: 16px;
+}
+h1{
+    
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+
+h2{
+    color:white;
+    font-size: 30px;
+}
+header{
+    padding:5em 5em;
+    height: 30px;
+}
+
+main{
+    
+    width: 50vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:1em;
+    max-width: 1200px;
+    max-height: 800px;
+}
+footer div{
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    color: white;
+    
+}
+button{
+    border-radius: 18px;
+    border:1px solid white; 
+    background: darkgreen;
+    height: 65px;
+    width: 300px;
+    min-width: 150px;
+    color:white;
+    margin: 0.5em;
+    font-weight: bold;
+    font-size: 30px;
+}
+button:active{
+    background: lightgreen;
+}
+.color{
+    background: darkgreen;
+    color:white;
+}
+.color:active{
+    background: lightgreen;
+}
+main div{
+    display: flex;
+    flex-wrap: nowrap;
+ 
+}
+textarea{
+    color:white;
+    width: 100%;
+    height: 100%;
+    font-size: 32px;
+    border: none;
+    resize: none;
+    background: transparent;
+    outline: none;
+}
+textarea::placeholder{
+    color:white;
+}
+
+@media (max-width:768px) {
+    .container{
+        flex-wrap: wrap;
+    }
+    main{
+        width: 100%;
+        margin: 30px ;
+    }
+    
+    aside{
+        width: 100vw;
+        height: 15vh;
+    }
+    main div{
+        justify-content: center;
+    }
+}
+@media(max-width:425px){
+    main div{
+        flex-wrap: wrap;
+        
+    }
+    .text{
+        margin:0;
+    }
+    
+}
+
+.center{
+    align-items: center;
+}
